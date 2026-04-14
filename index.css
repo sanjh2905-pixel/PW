@@ -578,12 +578,26 @@ flex-direction: column;
   right: -20px;
 }
 
-.Download{
+/* ===== IMAGE SECTION ===== */
+.image-section {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-  display: flex;
-  align-items: center;
-  position: absolute;
-  margin: 90px;
+.image-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* IMAGE BOX */
+.image-container {
+  width: 80%;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 /* ===== STATS2 SECTION ===== */
