@@ -36,6 +36,7 @@ border-top-left-radius: 6px;
 border-top-right-radius: 6px;
 border: 3px;
 height: 50px;
+
 }
 
 .option{
@@ -943,4 +944,13 @@ flex-direction: column;
 /* Hover Effect */
 .resource-card:hover {
   transform: translateY(-8px);
+}
+
+@media(max-width:320px){
+
+
+
+
+
+  #check:checked~
 }
