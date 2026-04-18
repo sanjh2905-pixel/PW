@@ -1016,9 +1016,33 @@ flex-direction: column;
 
 @media(max-width:320px){
 
+  #Firstpage{
+ width: 100%;
 
 
+  }
+.hero{
+width: 100%;
+height: 100%;
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #866ac82c;
+  position: relative;
 
+}
+
+.hero-left{
+  width: 100%;
+  height: 100%;
+
+}
+.hero-right{
+width: 100%;
+height: 100%;
+
+}
 
   #check:checked~
 }
