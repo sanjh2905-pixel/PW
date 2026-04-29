@@ -1010,68 +1010,160 @@ flex-direction: column;
   cursor: pointer;
 }
 
+label {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
 
 
 
 
-@media(max-width:320px){
 
-  #Firstpage{
- width: 100%;
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
 
-
+  .mainoption {
+    display: none;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
   }
 
-#navbr{
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-}
-
-
-.hero{
-width: 100%;
-height: 100%;
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-  background: #866ac82c;
-  position: relative;
-
-}
-
-.hero-left{
-  width: 100%;
-  height: 100%;
-
-}
-.hero-right{
-width: 100%;
-height: 100%;
-
-}
-/* Tablet */
-@media (max-width: 900px) {
-  .categories {
-    grid-template-columns: repeat(2, 1fr);
+  /* SHOW MENU WHEN CHECKBOX IS CLICKED */
+  #check:checked ~ #navbr .mainoption {
+    display: flex;
   }
+
 }
 
-/* Mobile */
-@media (max-width: 600px) {
+
+  #navbr {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  #navbr img {
+    width: 120px;
+    margin: 10px 0;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+
+  label {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  /* REMOVE FLOATING PEOPLE ON MOBILE */
+  .person {
+    display: none;
+  }
+
+  /* FEATURES */
+  .feature-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* CATEGORY GRID */
   .categories {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
-}
 
-
- 
-  .section {
-    padding: 40px 15px;
+  /* OFFLINE SECTION */
+  .offline {
+    height: auto;
   }
-}
 
+  .offline-box {
+    width: 95%;
+    padding: 20px;
+  }
 
-  #check:checked~
+  .city-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* STATS */
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* RESULTS */
+  .result-banner {
+    width: 95%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  /* RESOURCES */
+  .resource-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* TESTIMONIAL */
+  .testimonial-card {
+    flex-direction: column;
+  }
+
+  .video-box,
+  .testimonial-content {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* SLIDER */
+  .slider-track {
+    animation: none;
+    overflow-x: scroll;
+  }
+
+  .slide {
+    min-width: 250px;
+  }
+
 }
